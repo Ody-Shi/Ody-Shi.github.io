@@ -7,44 +7,75 @@
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
 	<style type="text/css">
-		#projects{
-			width:400px;
-			height:400px;
-			Background-image:url(https://i.pinimg.com/1200x/e7/58/fe/e758fe99a7edb555e767080ad23cd11c.jpg);
-			background-size:contain;
-			background-repeat:no-repeat;
-			position:relative;
-			top:200px;
-		}
-		#journal{
 
-			width:400px;
-			height:300px;
-			background-image:url(https://images.gr-assets.com/hostedimages/1535399249ra/26209909.gif);
-			background-size:contain;
-			background-repeat:no-repeat;
-			border-radius:50%;
-			position:relative;
-			top:-300px;
+		table{
+			width:100%;
+
+
 		}
+
+		td{
+			width:50%;
+			text-align: center;
+/*			border:1px solid white;*/
+		}
+
+		#container{
+			width:100%;
+			height:800px;
+
+			font-family: 'Courier Prime', monospace;			
+	}
 
 		body{
 			font-family: 'Courier Prime', monospace;
+
 			background-image:url(https://i.pinimg.com/originals/dd/14/e0/dd14e07361b00aa109fdd3d03d937708.gif);
-			background-size:contain;
+			background-size:cover;
+			margin:0px;
+			
 		}
+
+		.box{
+
+		width:100%;
+		height:400px;
+/*		background-color:red;*/
+		background-position:center;
+
+		background-size:contain;
+		background-repeat:no-repeat;
+
+
+		}
+		#projects{
+		
+			background-image:url(https://i.pinimg.com/1200x/e7/58/fe/e758fe99a7edb555e767080ad23cd11c.jpg);
+
+		
+		}
+		#journal{
+			/*width:400px;
+			height:300px;*/
+			background-size:cover;
+			background-image:url(https://images.gr-assets.com/hostedimages/1535399249ra/26209909.gif);
+			border-radius:50%;
+		
+		}
+
+		
 		#Name{
 			font-size:50px;
 		}
-		#projects-text{
+		/*#projects-text{
 			position:relative;
 			left:-500px;
 			top:200px;
-		}
-		#Journal-text{
+		}*/
+		/*#Journal-text{
 			position:relative;
 			top:200px;
-		}
+		}*/
 	</style>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,23 +83,71 @@
 	
 </head>
 <body>
+
+	<div id="container">
+
 <center>
 	<b>
 	<h1 id="Name">Ody Shi</h1>
 </b>
-<h1 id="projects-text">Projects</h1>
+
 </center>
+
+<center>
+<table>
+
+<tr>
+	<td>
 <a href="projects.html">
-<div id="projects"></div>
+<div class="box" id="projects">
+</div>
 </a>
-<center>
-	<h1 id="Journal-text">Journal</h1>
-</center>
-<center>
+
+</td>
+
+<!-- end of first cell first row -->
+
+
+<td>
 <a href="journal.html">
-	<div id="journal"></div>
+	<div class="box" id="journal">	
+</div>
+<!-- end of second cell first row -->
+
+
 </a>
+
+</td>
+</tr>
+<!-- end of first row -->
+
+<tr>
+<td>
+	<h1 id="projects-text">Projects</h1>
+
+</td>
+
+
+<td>
+	<h1 id="Journal-text">Journal</h1>
+</td>
+<!-- end of second cell second row -->
+
+
+</tr>
+<!-- end of second row -->
+
+
+
+</table>
+<!-- End of table -->
 </center>
+
+</div>   
+<!-- end of container div -->
+
+
+
 
 
 </body>
