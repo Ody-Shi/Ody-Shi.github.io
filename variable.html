@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+	</style>
+</head>
+<body>
+<div></div>
+<script>
+	
+var score =0;
+	function makeCookie (){
+		var cookie = document.createElement("div")
+		document.body.appendChild(cookie)
+		cookie.style.width = "200px"
+		cookie.style.height = "150px"
+		cookie.style.backgroundImage = "url(cookie.jpeg)"
+		cookie.style.backgroundSize = "contain"
+		cookie.style.backgroundRepeat = "no-repeat"
+		cookie.style.display = "inline-block"
+		cookie.style.opacity = "1"
+		cookie.style.margin = "1px"
+		score = score +1
+		console.log(score)
+		cookie.addEventListener("click", function(){
+		cookie.style.opacity = "0"
+
+	})}
+	setInterval(makeCookie, 1000)
+
+	
+</script>
+</body>
+</html>
