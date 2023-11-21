@@ -26,10 +26,10 @@
 			z-index:5;
 			margin:0;
 		}
-		#scope{
+		#fireworks{
 			width:100%;
 			height:900px;
-			background-image:url(scope.png);
+			background-image:url(fireworks.png);
 			background-size:contain;
 			background-repeat:no-repeat;
 			position:absolute;
@@ -61,7 +61,7 @@
 <body>
 <div id="rice"></div>
 <div id="riceFarmer"></div>
-<div id="scope"></div>
+<div id="fireworks"></div>
 <div id="painting"></div>
 <center><div id="damn"><b>damn</b></div></center>
 <script>
@@ -76,22 +76,23 @@
 			}
 		if (layer == 2){
 			riceFarmer.style.width ="110%";
-			scope.style.opacity ="1";
+			fireworks.style.opacity ="1";
+			fireworks.style.top ="-75px";
 			}
 		if (layer == 3){
 			riceFarmer.style.width ="1030px";
 			riceFarmer.style.height ="525px";
 			riceFarmer.style.left = "215px"
 			riceFarmer.style.top = "175px"
-			scope.style.width = "1030px";
-			scope.style.height = "725px";
-			scope.style.left = "215px"
-			scope.style.top = "175px"
+			fireworks.style.width = "1030px";
+			fireworks.style.height = "685px";
+			fireworks.style.left = "215px"
+			fireworks.style.top = "135px"
 			painting.style.opacity ="1";
 			}
 		if (layer == 4){
 			riceFarmer.style.opacity ="0";
-			scope.style.opacity ="0";
+			fireworks.style.opacity ="0";
 			painting.style.opacity ="0";
 			damn.style.opacity ="1";
 			}
