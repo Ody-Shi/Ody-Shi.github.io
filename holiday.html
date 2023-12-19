@@ -75,16 +75,29 @@
 <div class="paint" id="greenpaint"></div>
 <div class="paint" id="yellowpaint"></div>
 <div class="paint" id="paintballgun"></div>
-
+<audio src="splat.mp3" id="splat"></audio>
 <script type="text/javascript">
     var image;
-    document.addEventListener("click", 
+
+
+    
+    paintballfield.addEventListener("click", 
 function makePaint (event){
         var paint = document.createElement("div");
         document.body.appendChild(paint);
         paint.classList.add("paint");
         paint.style.backgroundImage = "url(" + image + ")";
+        splat.play()
+        paint.style.left = event.clientX-75 + "px"
+        paint.style.top = event.clientY-75 + "px"})
 
+    paintballgun.addEventListener("click", 
+function makePaint (event){
+        var paint = document.createElement("div");
+        document.body.appendChild(paint);
+        paint.classList.add("paint");
+        paint.style.backgroundImage = "url(" + image + ")";
+        splat.play()
         paint.style.left = event.clientX-75 + "px"
         paint.style.top = event.clientY-75 + "px"})
 
