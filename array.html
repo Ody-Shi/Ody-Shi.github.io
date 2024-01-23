@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#aquarium{
+			width:100%;
+			height:800px;
+			background-image:url(https://media.cnn.com/api/v1/images/stellar/prod/180619151734-aquarium-design-4.jpg?q=w_2598,h_1732,x_0,y_0,c_fill/h_618);
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+		#display{
+			width:550px;
+			height:450px;
+			position:absolute;
+			top:200px;
+			background-repeat:no-repeat;
+			background-size:contain;
+			left:500px;
+			opacity:60%;
+		}
+		#aqexp{
+			font-size:100px;
+			position:absolute;
+			left:50px;
+			color:darkred;
+		}
+		body{
+			margin:0px;
+		}
+	</style>
+</head>
+<body>
+<center><div id="aqexp">Premium Aquarium Experience!</div></center>
+<div id="aquarium"></div>
+<center><div id="display"></div></center>
+<script>
+	var random = Math.round(Math.random()*7)
+	var fish = ["url(salmon.png)", "url(yellowtail.png)", "url(catfish.png)", "url(african-lungfish.png)", "url(jaguar-cichlid.png)", "url(alligator-gar.png)", "url(bala-shark.png)", "url(angelfish.png)"]
+	document.addEventListener("click", function(){
+		console.log(fish[random])
+		random = Math.round(Math.random()*7)
+		display.style.backgroundImage = fish[random]
+	})
+</script>
+</body>
+</html>

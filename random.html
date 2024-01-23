@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#prompt{
+			font-size:100px;
+		}
+		#display{
+			width:500px;
+			height:500px;
+			font-size:70px;
+			top:200px;
+			position:relative;
+		}
+	</style>
+</head>
+<body>
+<center><div id="prompt">What's the next food you're going to eat?</div></center>
+<center><div id="display"></div></center>
+<script type="text/javascript">
+	var random = Math.round(Math.random()*10)
+	var food = ["Steak", "Salad", "Fried Chicken", "Ice Cream", "Pizza", "Spinach", "Rice", "Pasta", "Soup", "Cookies", "Sushi"]
+
+	document.addEventListener("click", function(){
+		console.log(food[random])
+		random = Math.round(Math.random()*10)
+		display.innerText = food[random]
+	})
+</script>
+</body>
+</html>
