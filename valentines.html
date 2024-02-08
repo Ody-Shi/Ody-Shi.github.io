@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#sky{
+			width:100%;
+			height:800px;
+			background-image:url(https://t3.ftcdn.net/jpg/01/02/64/28/360_F_102642850_Mca9lTRDH60DQin39YwCF5Jzd15lcdoo.jpg);
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+		#cloud1{
+			width:400px;
+			height:300px;
+			background-image:url(cloud1.png);
+			background-repeat:no-repeat;
+			background-size:contain;
+			position:absolute;
+			top:50px;
+			left:100px;
+		}
+		#cloud2{
+			width:300px;
+			height:200px;
+			background-image:url(cloud2.png);
+			background-repeat:no-repeat;
+			background-size:contain;
+			position:absolute;
+			top:50px;
+			left:900px;
+		}
+		#plane{
+			width:1200px;
+			height:900px;
+			background-image:url(plane.png);
+			background-repeat:no-repeat;
+			background-size:contain;
+			position:absolute;
+			top:50px;
+			left:1000px;
+			transition-duration:0.3s;
+		}
+		#text{
+			font-size:40px;
+			color:palevioletred;
+			position:absolute;
+			top:430px;
+			left:1630px;
+			white-space:nowrap;
+			transition-duration:0.3s;
+
+		}
+		body{
+			margin:0px;
+		}
+	</style>
+</head>
+<body>
+<div id="sky"></div>
+<div id="cloud1"></div>
+<div id="cloud2"></div>
+<div id="plane"></div>
+<div id="text">Happy Valentine's Day!</div>
+<audio src="Airplane.mp3" id="sound"></audio>
+<script>
+	x = 1000
+	y = 1630
+	document.addEventListener("keydown", function(input){
+ 		
+ 		if (input.key == "ArrowLeft"){
+ 			console.log("left")
+ 			x = x-15;
+ 			y = y-15;
+ 			plane.style.left = x+"px"
+ 			text.style.left = y+"px"
+ 			sound.play()
+ 		}
+ 	})
+</script>
+</body>
+</html>

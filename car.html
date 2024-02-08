@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#car{
+			width:400px;
+			height:400px;
+			background-image:url(https://assets-global.website-files.com/611293f497079e265e91737e/6235b2416cb1b45e12469914_pw-lm-eqe-eq-ov.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			transition-duration:0.3s;
+		}
+
+	</style>
+</head>
+<body>
+<!-- 
+1. Make the car div
+2. Add an event listener to each arrow key
+3. Have the event only apply to the div
+4. Add a transition time so it's smoother
+
+ -->
+ <div id="car"></div>
+ <script>
+ 	x = 0
+ 	y = 0
+ 	document.addEventListener("keydown", function(input){
+ 		
+ 		if (input.key == "ArrowDown"){
+ 			console.log("down")
+ 			x = x+15;
+ 			car.style.top = x+"px"
+ 		}
+ 		if (input.key == "ArrowUp"){
+ 			console.log("up")
+ 			x = x-15;
+ 			car.style.top = x+"px"
+ 		}
+ 		if (input.key == "ArrowLeft"){
+ 			console.log("left")
+ 			y = y-15;
+ 			car.style.left = y+"px"
+ 		}
+ 		if (input.key == "ArrowRight"){
+ 			console.log("right")
+ 			y = y+15;
+ 			car.style.left = y+"px"
+ 		}
+ 	})
+
+ </script>
+</body>
+</html>
