@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	Who's the best UFC fighter?
+<input id="person"></input>
+<button id="button">submit</button>
+<div id="answer"></div>
+<script>
+	button.addEventListener("click", function(){
+		console.log(person.value)
+		
+		if (person.value == "Ody"){answer.innerText = "You are 100% correct!"}
+			else {answer.innerText = "You are " + Math.round(Math.random()*100) + "% correct!"}
+		if (person.value == "Alexander Volkanovski"){answer.innerText = "The GOAT"}
+		person.value = ""
+	})
+</script>
+</body>
+</html>
